@@ -1,11 +1,11 @@
-# revision 25694
+# revision 26888
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-de
-Version:	20120327
+Version:	20120808
 Release:	1
 Summary:	TeX Live manual (German)
 Group:		Publishing
