@@ -1,11 +1,11 @@
-# revision 26888
+# revision 31848
 # category TLCore
 # catalog-ctan undef
 # catalog-date undef
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-texlive-de
-Version:	20120808
+Version:	20131009
 Release:	1
 Summary:	TeX Live manual (German)
 Group:		Publishing
@@ -22,12 +22,22 @@ TeXLive texlive-de package.
 
 #-----------------------------------------------------------------------
 %files
-%doc %{_texmfdir}/doc/texlive/texlive-de/Makefile
-%doc %{_texmfdir}/doc/texlive/texlive-de/lmsy10-40.png
-%doc %{_texmfdir}/doc/texlive/texlive-de/texlive-de.css
-%doc %{_texmfdir}/doc/texlive/texlive-de/texlive-de.html
-%doc %{_texmfdir}/doc/texlive/texlive-de/texlive-de.pdf
-%doc %{_texmfdir}/doc/texlive/texlive-de/texlive-de.tex
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/Makefile
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/install-lnx-main.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/lmsy10-40.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/psview.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/stdcoll.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/texlive-de-html.css
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/texlive-de-html.tex
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/texlive-de.css
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/texlive-de.html
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/texlive-de.pdf
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/texlive-de.tex
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/tlmgr-general-options.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/tlmgr-gui.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/tlmgr-paper-options.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/tray-menu.png
+%doc %{_texmfdistdir}/doc/texlive/texlive-de/wizard-w32.png
 
 #-----------------------------------------------------------------------
 %prep
@@ -36,5 +46,5 @@ TeXLive texlive-de package.
 %build
 
 %install
-mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+mkdir -p %{buildroot}%{_texmfdistdir}
+cp -fpar doc %{buildroot}%{_texmfdistdir}
