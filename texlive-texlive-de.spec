@@ -1,6 +1,6 @@
 Name:		texlive-texlive-de
 Version:	62234
-Release:	1
+Release:	2
 Summary:	TeX Live manual (German)
 Group:		Publishing
 URL:		http://tug.org/texlive
