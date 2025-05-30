@@ -1,5 +1,5 @@
 Name:		texlive-texlive-de
-Version:	71542
+Version:	74226
 Release:	1
 Summary:	TeX Live manual (German)
 Group:		Publishing
